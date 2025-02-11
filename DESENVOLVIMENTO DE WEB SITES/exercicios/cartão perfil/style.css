@@ -1,0 +1,57 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.foto{
+    background-color: #3498db;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 10px;
+    
+
+}
+
+img {
+    border:3px solid white;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: 0px 0.2px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+}
+.card {
+    /* define a largura da div,da imagem ,qualquer tag */
+    width: 400px;
+    margin: 0px auto;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.box-branco {
+    background-color: white;
+    padding: 10px 20px;
+       
+}
+.dados {
+    background-color: #f9f9f9;
+    margin: 10px 0px;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+
+}
+i {
+    margin-right: 15px;
+    color: #3498db;
+}

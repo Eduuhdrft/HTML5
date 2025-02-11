@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .example-box {
+            background-color: crimson;
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto;
+        }
+
+        /* Primeiro valor: valor positivo direita, negativo esquerda
+Segundo valor: positivo botton, negativo top */
+        #example1:hover {
+            transform: translate(10px, 50px);
+        }
+
+        #example2:hover {
+            transform: rotate(45deg);
+        }
+
+        #example3:hover {
+            transform: scale(1.5);
+        }
+
+        #example4:hover {
+            transform: skew(50deg, 20deg);
+        }
+
+        #example5:hover {
+            transform: rotateX(60deg);
+        }
+
+        #example6:hover {
+            transform: rotateY(60deg);
+        }
+
+        #example7:hover {
+            transform: translate(10px, 30px) rotate(45deg) scale(1.2);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Trasform</h1>
+
+    <h3>1.Translate()</h3>
+    <div class="example-box" id="example1">Translate</div>
+    <p>Move o elemento 50px para a direita e 50px para baixo</p>
+
+    <h3>2. Rotate</h3>
+    <div class="example-box" id="example2">Rotate</div>
+    <p>Rotaciona o elemento 45 graus no sentido horário</p>
+
+
+    <h3>3. Scale</h3>
+    <div class="example-box" id="example3">Scale</div>
+    <p>Aumenta o tamanho do elemento emn 50%</p>
+
+    <h3>4. Skew</h3>
+    <div class="example-box" id="example4">Skew</div>
+    <p>Inclina o elemento 20 graus horizontalmente e 10 graus verticalmente</p>
+
+    <h3>5. Rotatex</h3>
+    <div class="example-box" id="example5">Rotatex</div>
+    <p>Rotaciona o elemento ao redor eixo x 60 graus</p>
+
+    <h3>6. Rotatey</h3>
+    <div class="example-box" id="example6">Rotatey</div>
+    <p>Rotaciona o elemento ao redor eixo y 60 graus</p>
+
+    <h3>7. Combinando transformações</h3>
+    <div class="example-box" id="example7">Combinado</div>
+    <p>várias transformações </p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-weight: 600;
+        justify-content: center;
+    }
+
+    .example-container {
+        border: 2px solid lightskyblue;
+        padding: 20px;
+        margin: 20px 0;
+        height: 200px;
+        position: relative;
+        overflow: auto;
+    }
+    .static-box {
+        background-color: tomato;
+        position: static;
+        /* top: não tem efeito em elementos static; */
+        top: 30px;
+    }
+    .relative-box {
+        position: relative;
+        background-color:crimson;
+        top: 50px;
+        bottom: 30px;
+        left: 60px ;
+        right: 0px ;
+
+    }
+    .absolute-box {
+        position: absolute;
+        background-color: teal;
+        top: 10px;
+        left: 20px;
+    }
+
+    .fixed-box {
+        background-image: url("https://seeklogo.com/images/W/whatsapp-logo-112413FAA7-seeklogo.com.png");
+        background-size: cover;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        
+    }
+
+    .sticky-box {
+        position: sticky;
+        background-color: indigo;
+        top: 20px;
+    }
+
+    .scroll-content {
+        height: 1000px;
+
+    }
+        
+</style>
+
+</head>
+<body>
+    <h1>Position</h1>
+
+    <h2>1. Position Static</h2>
+    <div class="example-container">
+        <div class="box static-box">Static</div>
+    </div>
+
+    <h2>2. Position Relative</h2>
+    <div class="example-container">
+        <div class="box relative-box">Relative</div>
+    </div>
+
+    <h2>3. Position Absolute</h2>
+    <div class="example-container">
+        <div class="box absolute-box">Absolute</div>
+    </div>
+
+    <h2>4. Position Fixed</h2>
+    <a href="https://wa.me/5511950500298" target="_blank" class="box fixed-box"></a>
+
+    <h2>5. Position Sticky</h2>
+    <div class="example-container">
+        <div class="scroll-content">
+            <p>role para baixo para baixo para ver o efeito do position: sticky</p>
+            <div class="box sticky-box">Sticky</div>
+            <p>o elemnto ficará acima "preso" no topo quando você rolar</p>
+        </div>
+        
+    </div>
+    
+
+    
+
+
+
+</body>
+</body>
+</html>

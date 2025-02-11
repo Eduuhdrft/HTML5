@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+
+        }
+
+        .hoverexample:hover {
+            color: red;
+            transition: all 0.3 ease;
+
+
+        }
+
+        .focus-example:focus {
+            outline: 3px solid red;
+
+        }
+
+        .active-example:active {
+            background-color: crimson;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+
+        }
+
+        .first-chil-example p:first-child {
+            color: darkslateblue;
+        }
+
+
+        .first-chil-example p:last-child {
+            color: hotpink;
+        }
+
+        .only-child-example p:only-child {
+            background-color: gray;
+            color: white;
+            padding: 10px;
+        }
+
+        .nth-chil-example p:nth-child(odd), span:nth-child(odd) {
+            color: aqua;
+
+        }
+
+        .first-letter-example::first-letter {
+            font-size: 20px;
+            font-weight: 600;
+
+        }
+        .first-line-example::first-line {
+            color: blueviolet;
+
+        }
+
+        .before-after-example::before {
+            content: "😘";
+
+        }
+        .before-after-example::after {
+            content: "😘";
+        }
+
+        .selection-example::selection {
+            background-color: orange;
+            color: white;
+
+        }
+           
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo Pseudo-elementos e Pseudo-classes</h1>
+
+    <h2>Pseudo-classes</h2>
+    <div class="box">
+        <h3>:hover</h3>
+        <p class="hoverexample">Passe o mouse sobre esse texto</p>
+    </div>
+
+    <div class="box">
+        <h3>:focus</h3>
+        <input type="text" class="focus-example" placeholder="Clique aqui">
+    </div>
+
+    <div class="box">
+        <h3>:active</h3>
+        <button class="active-example">Clique aqui e segure</button>
+    </div>
+
+    <div class="box">
+        <h3>:first-child</h3>
+        <div class="first-chil-example">
+            <p>Filho 1</p>
+            <p>Filho 2</p>
+            <span>Filho 3</span>
+            <p>Filho 4</p>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <h3>:only-child</h3>
+        <div class="only-child-example">
+            <div>
+                <p>Esta deve ser estilizada</p>
+            </div>
+            <div>
+                <p>Esta div não deve ser estilizada</p>
+                <p>Porrque ela tem dois filhos</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="box">
+        <h3>:nth-child</h3>
+        <div class="nth-chil-example">
+            <p>Filho 1</p>
+            <p>Filho 2</p>
+            <span>Filho 3</span>
+            <p>Filho 4</p>
+            <span>Filho 5</span>
+            <p>Filho 6</p>
+        </div>
+    </div>
+
+    <h2>Pseudo elementos</h2>
+    <div class="box">
+        <h3>::first-letter</h3>
+        <p class="first-letter-example">Este paragrafo tem a primeira letra estilizada</p>
+    </div>
+
+    <div class="box">
+        <h3>::first-line</h3>
+        <p class="first-line-example">Este paragrafo tem a primeira linha estilizada <br>Essa é a segunda linha do paragrafo</p>
+    </div>
+
+    <div class="box">
+        <h3>::before e ::after</h3>
+        <p class="before-after-example">Este texto tem um conteudo adicionado antes e depois.</p>
+    </div>
+
+    <div class="box">
+        <h3>::selection</h3>
+        <p class="selection-example">Selecione esse texto.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #4a2c2a;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #d7d7d7;
+}
+
+.hero {
+    color: #f4f4f4;
+    text-align: center;
+    padding: 4rem 0;
+    background-image: url("https://www.supremoarabica.com.br/wp-content/uploads/2019/12/iStock-1135359711-1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.products {
+    padding: 2rem 0;
+
+}
+
+.products-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 10px;
+}
+
+.product-card {
+
+    background-color: #fff;
+    border-radius: 8px;
+    width: calc(25% - 2rem);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+.about {
+    background-color: #e6d2c9;
+    padding: 4rem 0;
+
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-image {
+    width: 30%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: justify;
+}
+
+footer {
+    background-color: #4a2c2a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Notebook */
+@media (max-width: 1024px) {
+    .product-card {
+        width: calc(33.33% - 1.5rem);
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 1rem);
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .about-image, .about-text {
+        width: 100%;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    }
+
+.

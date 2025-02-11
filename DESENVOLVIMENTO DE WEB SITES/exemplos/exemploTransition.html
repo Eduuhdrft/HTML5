@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .example-box {
+            width: 100px;
+            height: 100px;
+            background-color: plum;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        #example1 {
+            /* transition-property: width ;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out; */
+
+            transition: width 1s ease-in-out;
+        }
+
+        #example1:hover {
+            width: 300px;
+
+        }
+
+        #example2 {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #example2:hover {
+            transform: rotate(45deg);
+        }
+
+        #example3 {
+            transition: background-color 0.5s linear 1s, border-radius 0.5s ease-in-out;
+        }
+
+        #example3:hover {
+            background-color: blueviolet;
+            border-radius: 50%;
+        }
+
+        #example4 {
+            transition: all 0.5s ease-in-out, background-color 0.5s linear 1s;
+        }
+
+        #example4:hover {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transform: rotate(180deg);
+        }
+
+        .tining-funcion {
+            width: 50px;
+            height: 50px;
+            background-color: cornflowerblue;
+            transition: transform 2s;
+            margin-bottom: 10px;
+
+        }
+
+        .tining-funcion:hover {
+            transform: translateX(300px);
+        }
+
+        /* a velocidade permanece constante */
+        #linear {
+            transition-timing-function: linear;
+        }
+
+        /* acelera no inicio e desacelera no final (suave) */
+        #ease {
+            transition-timing-function: ease;
+        }
+
+        /* começa devagar e acelera no final */
+        #ease-in {
+            transition-timing-function: ease-in;
+        }
+
+        /* começa rapido e desacelera no final */
+        #ease-out {
+            transition-timing-function: ease-out;
+        }
+
+        /* começa levemente lento,constante no meio, e desacelera no final */
+        #ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+
+        #cubic-bezin {
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transition</h1>
+
+    <h2>Exemplo Básico: Largura</h2>
+    <div class="example-box" id="example1"></div>
+    <p>Passe o mouse sobre o quadrado para ver a transição da largura</p>
+
+    <h2>Exemplo Rotação</h2>
+    <div class="example-box" id="example2"></div>
+    <p>Passe o mouse sobre o quadrado para ver a transição da Rotação</p>
+
+    <h2>Exemplo Multiplas Propriedades</h2>
+    <div class="example-box" id="example3"></div>
+    <p>Passe o mouse sobre o quadrado para ver a transição de cor e forma</p>
+
+    <h2>Exemplo Transição Complexa</h2>
+    <div class="example-box" id="example4"></div>
+    <p>Passe o mouse sobre o quadrado para ver uma transição complexa</p>
+
+    <h2>Transition Timing Funcion</h2>
+
+    <div class="tining-funcion" id="linear">Linear</div>
+    <div class="tining-funcion" id="ease">Ease</div>
+    <div class="tining-funcion" id="ease-in">Ease-in</div>
+    <div class="tining-funcion" id="ease-out">Ease-out</div>
+    <div class="tining-funcion" id="ease-in-out">Ease-in-out</div>
+    <div class="tining-funcion" id="cubic-bezin">Cubic-bezin</div>
+</body>
+
+</html>

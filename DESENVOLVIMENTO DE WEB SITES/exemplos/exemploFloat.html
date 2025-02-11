@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .example {
+            border: 2px solid rgb(39, 122, 218);
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .box {
+            background-color: coral;
+            color: white;
+            width: 100px;
+            height: 100px;
+        }
+
+        .clear {
+            clear: both;
+            margin-top: 20px;
+        }
+
+        .image-wrap {
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+        }
+
+        .image-wrap img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+
+        }
+
+        .example p {
+            text-align: justify;
+        }
+
+        .column {
+            width: 50%;
+            background-color: rgb(24, 114, 166);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo float</h1>
+    <p>O float é uma propriedade de CSS que permite que um elemento "flutue" a esquerda ou a direita.</p>
+
+    <h2>1. Float Básico</h2>
+    <div class="example">
+        <div class="box" style="float: right">Float right</div>
+        <div class="box" style="float: left"> Float left</div>
+        <p class="clear">Este dois elementos etsão flutuando um a esquerda e o outro a direita</p>
+
+    </div>
+    <h2>2. Imagem com texto ao Redor</h2>
+    <div class="example">
+        <div class="image-wrap" style="float: left"><img
+                src="https://th.bing.com/th/id/OIP.wzKoSfuLw24t-ihDlcA_VAHaHa?w=181&h=181&c=7&r=0&o=5&pid=1.7" alt="">
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus eum dolor, consequatur doloribus veniam
+            culpa consectetur sequi eveniet dolores, atque quia non ea eius! Excepturi officiis suscipit, sit atque
+            porro officia non quam laudantium nisi dolorum, reprehenderit doloribus beatae et impedit ex odio ducimus
+            consequuntur neque nam velit expedita perspiciatis quo! Earum non fugit rem aspernatur eius hic placeat amet
+            numquam blanditiis sunt laboriosam totam, consequuntur excepturi temporibus unde mollitia officia aliquid
+            animi quasi sed vel omnis facilis quidem. Maxime qui eveniet, itaque, mollitia natus voluptate ipsa deleniti
+            repudiandae consectetur porro et recusandae! Tenetur repellat aperiam praesentium in consectetur! Nam?
+    </div>
+
+    <h2>3. Layout com duas colunas</h2>
+    <div class="example">
+        <div class="column" style="float: left">
+            <h3>Coluna esquerda</h3>
+            <p>Conteudo da coluna esquerda</p>
+        </div>
+        <div class="column" style="float: right">
+            <h3>Coluna direita</h3>
+            <p>Conteudo da coluna direita</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

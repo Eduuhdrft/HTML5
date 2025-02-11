@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        Cadastro dev
+    </h1>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div>
+            <div>
+                <label for="">email</label>
+                <input type="email" placeholder="escreva seu email">
+            </div>
+            <div>
+                <label for="">numeros de filhos</label>
+                <input type="number">
+            </div>
+            <div>
+                <label for="">data de nascimento</label>
+                <input type="date">
+            </div>
+            <div>
+                <label for="">genero</label>
+                <br>
+                <input type="radio" name="genero"> <span> masculino </span>
+                <input type="radio" name="genero"> <span> feminino </span>
+                <input type="radio" name="genero"> <span> outro </span>
+
+            </div>
+            <label for="">estado</label>
+            <select>
+
+                <option value="">sao paulo</option>
+                <option value="">rio de janeiro</option>
+                <option value="">espirito santo</option>
+                <option value="">parana</option>
+
+            </select>
+        </div>
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>area de interesse</legend>
+        <input type="checkbox"> <span>front end</span>
+        <input type="checkbox"> <span>back end</span>
+        <input type="checkbox"> <span>full stack</span>
+        <input type="checkbox"> <span>dev ops</span>
+        <input type="checkbox"> <span>dados</span>
+        <input type="checkbox"> <span>ciber segurity</span>
+        <input type="checkbox"> <span>mobile</span>
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>fale um pouco sobre você </legend>
+        <textarea rows="5" cols="80" ></textarea>
+
+    </fieldset>
+    <br>
+    <div>
+        <label for="">qual é o seu interesse em trabalhar 6 dias da semana e 12 horas por dia?</label>
+        <br>
+        <span>0</span> <input type="range" max="100" min="0"><span>100</span>
+    </div>
+    <hr>
+    <div>
+        <label>Melhor Horário para entrevista</label>
+        <input type="time">
+        <br>
+        <label for=""> sua cor favorita 😍</label>
+        <input type="color">
+    
+    </div>
+    <hr>
+    <div>
+        <label for="">seu curriculo</label>
+        <input type="file">
+    </div>
+    <hr>
+    <button type="submit">Enviar</button>
+
+</body>
+
+</html>

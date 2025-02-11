@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color-primary:#C9374F;
+    --bg-color-secondary: #FBADBE;
+    --bg-color-tertiary:#f5d6dd;
+    
+    --text-color:#000;
+    --ff-base:"roboto", sans-serif;
+    --ff-secondary: "poppins", sans-serif;
+}
+
+html, button {
+    font-size:  1rem/1.5;
+    font-family: var(--ff-base) ;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.container {
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+

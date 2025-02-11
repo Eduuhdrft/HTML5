@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+nav p {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.logo {
+    background-color: #0678ba;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.produtos {
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.boxprodutos {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.produtoscard {
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.preco {
+    color: #0678ba;
+    font-weight: 600;
+}
+
+button {
+    background-color:#0678ba;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color:#1c9be4;
+}
+
+footer {
+    background-color:#333 ;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}

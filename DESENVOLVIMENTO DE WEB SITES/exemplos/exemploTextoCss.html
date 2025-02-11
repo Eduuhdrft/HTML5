@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 800px;
+            margin: 0px auto;
+        }
+
+        h1 {
+            /* text-align serve para alinhar o texto */
+            text-align: center;
+            /* font family , serve para definir a font do elemento */
+            font-family: Georgia, serif;
+            color: rgb(58, 57, 57);
+            /* font-size serve para definir o tamanho do elemento */
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+
+        .destaque {
+            color: red;
+            /* font-weight, serve para espessura e peso da fonte */
+            font-weight: 600;
+            /* font-style,serve para deixar o texto em italico */
+            font-style: italic;
+
+
+        }
+
+        .justificado {
+            /* justify deixa o texto justificado */
+            text-align: justify;
+        }
+
+        .sublinhado {
+            /* sublinha o texto */
+            text-decoration: underline;
+            /* muda a cor do sublinhado */
+            text-decoration-color: blue;
+            /* muda o estilo do sublinhado */
+            text-decoration-style: wavy;
+
+        }
+
+        .direita {
+            text-align: right;
+        }
+
+        .pequeno {
+            font-size: 10px;
+
+        }
+
+        .grande {
+            font-size: 20px;
+
+        }
+
+        .fontesdiferentes {
+            font-family: "courier new", monospace;
+        }
+
+        .maiscula {
+            text-transform:uppercase;
+    
+        }
+
+        .capitalizado {
+            text-transform: capitalize;
+        }
+
+        .minuscula {
+            text-transform: lowercase;
+        }
+        .espacamento-palavras {
+            word-spacing: 50px;
+
+        }
+        .espacamento-letras {
+            letter-spacing: 10px;
+
+        }
+        .linha-atravessada {
+            text-decoration: line-through;
+            text-decoration-color: blueviolet;
+            text-decoration-style: double;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplos de formatação de texto</h1>
+
+    <p>Este é um páragrafo normal com estilo padrão da página. Vamos ver diferentes <span class="destaque">estilos de
+            formatação</span> de texto.</p>
+
+    <p class="justificado">Este paragrafo está <span class="sublinhado">justificado</span> e contém um texto mais longo
+        para demonstrar o efeito Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio sequi perspiciatis
+        impedit aspernatur, fugiat id laborum quos non praesentium amet, iste soluta voluptates dicta nostrum illum nisi
+        officiis possimus.</p>
+
+    <p class="direita">Este texto esta alinhado a direita</p>
+
+    <p>podemos ter texto em <span class="grande"> tamanho grande</span> ou em <span class="pequeno">tamanho menor</span>
+    </p>
+
+    <p class="maiscula">Este texto esá em maiusculo</p>
+
+    <p class="minuscula">Este texto está em minusculo</p>
+
+    <p class="capitalizado">cada palavra começa com maiuscula</p>
+
+    <p class="fontesdiferentes">Este texto tem outra font</p>
+
+    <p class="espacamento-letras">Este texto tem um espaçamento entre as letras</p>
+
+    <p class="espacamento-palavras">Este texto tem um espaçamento maior entre as palavras</p>
+
+    <p class="linha-atravessada">texto com linha atravessada</p>
+</body>
+
+</html>

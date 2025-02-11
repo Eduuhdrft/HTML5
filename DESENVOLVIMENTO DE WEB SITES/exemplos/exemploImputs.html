@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exemplo de imputs</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>dados do login</legend>
+            <div>
+                <label for="nome">nome</label>
+                <input name="nome" id="nome" type="text" placeholder="digite o seu nome" />
+            </div>
+
+            <br>
+
+            <div><label for="">senha</label>
+                <input name="senha" type="password" placeholder="digite sua senha">
+            </div>
+        </fieldset>
+
+
+        <br>
+        <div>
+            <label for="">email</label>
+            <input type="email" placeholder="digite seu email">
+
+        </div>
+        <br>
+        <div>
+            <label for="">telefone</label>
+            <input type="tel">
+
+        </div>
+        <br>
+        <div>
+            <label for="">numero</label>
+            <input type="number">
+        </div>
+        <br>
+        <div>
+            <label for="">data</label>
+            <input type="date">
+        </div>
+        <br>
+        <div>
+            <label for="">hora</label>
+            <input type="time">
+        </div>
+        <br>
+        <div>
+            <label for="">cor</label>
+            <input type="color">
+        </div>
+        <br>
+        <div>
+            <label for="">arquivo</label>
+            <input type="file" accept="image/*">
+        </div>
+        <br>
+        <div>
+            <label for="">qual foi seu nivel de satisfação</label>
+            <br>
+            <span>0</span><input type="range" max="50" min="0" step="25"><span>50</span>
+        </div>
+        <br>
+        <div>
+            <label for="">doenças</label>
+            <div>
+                <input type="checkbox"><span>pressão alta</span>
+                <br>
+                <input type="checkbox"><span>diabetes</span>
+                <br>
+                <input type="checkbox"><span>catapora</span>
+                <br>
+                <input type="checkbox"><span>covid</span>
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="">escolaridade</label>
+            <div>
+                <input type="radio" name="escolariedade" value="fundamental"><span>fundamental</span>
+                <br>
+                <input type="radio" name="escolariedade" value="medio"><span>medio</span>
+                <br>
+                <input type="radio" name="escolariedade" value="superior"><span>superior</span>
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="">sabores de sorvete</label>
+            <select>
+                <option value="" selected>chocolate</option>
+                <option value="">flocos</option>
+                <option value="">limão</option>
+                <option value="" hidden>morango</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="">textarea</label>
+            <textarea rows="2" cols="20"  maxlength="10" placeholder="digite sua biografia"></textarea>
+        </div>
+        <button type="submit">enviar</button>
+
+
+    </form>
+</body>
+
+</html>

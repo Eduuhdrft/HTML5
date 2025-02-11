@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .example-box {
+            width: 200px;
+            height: 100px;
+            background-color: crimson;
+            margin: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        #example1 {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5) ;
+        }
+
+        #example2 {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) ;
+        }
+
+        #example3 {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        } 
+
+        #example4 {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #example5 {
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Box Shadow</h1>
+    <p>Sintaxe Básico </p>
+    <pre>box-shadow: h v blur spead color</pre>
+    <h2>Exemplos</h2>
+
+    <div class="example-box" id="example1">Sombra Básica</div>
+    <div class="example-box" id="example2">Sombra Difusa</div>
+    <div class="example-box" id="example3">Sombra Elevada</div>
+    <div class="example-box" id="example4"> Multiplas Sombras</div>
+    <div class="example-box" id="example5">Sombra Interna</div>
+</body>
+</html>

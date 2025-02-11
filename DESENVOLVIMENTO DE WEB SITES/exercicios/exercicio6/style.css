@@ -1,0 +1,36 @@
+table {
+    /* Faz com que as celulas da minha tabela fiquem juntas */
+    border-collapse: collapse;
+}
+
+thead {
+    /* Define a cor do fundo do cabeçario */
+    background-color: brown;
+
+    /* Define a cor do texto */
+    color: white;
+
+    /* Define a borda, primeiro espessura e depois o tipo de borad e a cor */
+    border: 1px solid black;
+
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px 0px;
+}
+
+
+td {
+    padding: 15px 10px;
+}
+
+
+button {
+    border: 3px solid brown;
+
+    /* serve para arendondar os nossos elementos */
+    border-radius: 10px;
+
+}

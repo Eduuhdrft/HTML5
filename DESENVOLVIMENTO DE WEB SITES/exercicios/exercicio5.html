@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Diretório de Funcionários </h1>
+    <table border="1">
+        <caption>Informações dos Funcionários</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Contato</th>
+                <th>Cargo</th>
+                <th>Departamento</th>
+                <th>Projetos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>João Silva</td>
+                <td>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Email</th>
+                                <th>Telefone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>joao.silva@exenplo.com</td>
+                                <td>(11)98765-4321</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </td>
+                <td>Desenvolvedor</td>
+                <td>TI</td>
+                <td><ul>
+                    <li>Projeto A</li>
+                    <li>Projeto B</li>
+                </ul></td>
+
+            </tr>
+            <tr>
+                
+                    <td>002</td>
+                    <td>Maria Santos</td>
+                    <td>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Email</th>
+                                    <th>Telefone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>maria.santos@exenplo.com</td>
+                                    <td>(11)98765-1234</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>Gerente de Marketing</td>
+                    <td>Marketing</td>
+                    <td>
+                        <ul>
+                            <li>Campanha X</li>
+                            <li>Redesing da Marca</li>
+                        </ul>
+                    </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Adicionar Novo Funcionário</h2>
+    <form action="">
+<fieldset>
+    <legend>Informações Pessoais</legend>
+    <div>
+        <label>ID:</label>
+        <input type="text">
+    </div>
+    <br>
+    <div>
+        <label>Nome Completo:</label>
+        <input type="text">
+    </div>
+    <br>
+    <div>
+        <label>Email:</label>
+        <input type="text">
+    </div>
+    <br>
+    <div>
+        <label>Telefone:</label>
+        <input type="text">
+    </div>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Informações Profissionais</legend>
+    <div>
+        <label>Cargo:</label>
+        <input type="text">
+    </div>
+    <br>
+    <div>
+        <label>Departamento:</label>
+        <input type="text">
+    </div>
+    <br>
+    <div>
+        <label> Projetos (separados por vírgula):</label>
+        <input type="text">
+    </div>
+</fieldset>
+<br>
+<button>Adicionar Funcionário</button>
+    </form>
+
+</body>
+
+</html>

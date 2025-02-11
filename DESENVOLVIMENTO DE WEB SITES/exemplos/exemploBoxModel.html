@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- limk do font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- link do google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(151, 179, 179);
+            font-family: "Kanit", sans-serif;
+            color: blueviolet;
+            font-weight: 300;
+
+
+        }
+
+        .box {
+            background-color: lightblue;
+            border: 2px solid blue;
+            color: rgb(71, 67, 67);
+            padding: 50px 10px;
+            width: 500px;
+            height: 200px;
+            margin-left: 15px;
+
+        }
+
+        .box-content {
+            background-color: lightgoldenrodyellow;
+        }
+
+        #margem-auto {
+            background-color: lightpink;
+
+            /* centralize o texto */
+            text-align: center;
+            width: 800px;
+
+            /* centraliza os nossos elementos */
+            margin: 0px auto;
+            font-family: "Pacifico", cursive;
+
+        }
+
+        .box-sizing {
+            background-color: lightcoral;
+            border: 5px solid red;
+            width: 600px;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo Box Model</h1>
+    <div class="box">
+        <div class="box-content">Conteudo dentro do Box</div>
+    </div>
+
+    <h2>Margem automática</h2>
+
+    <div id="margem-auto">Texto com margem automatica</div>
+
+    <h2>Box Sizing</h2>
+    <div class=" box-sizing">
+        Sem box sizing: border-box
+    </div>
+
+    <div class="box-sizing border-box">
+        Com box sizing: border-box
+    </div>
+
+    <i class="fa fa-check-square-o"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-baggage-claim"><path d="M22 18H6a2 2 0 0 1-2-2V7a2 2 0 0 0-2-2"/><path d="M17 14V4a2 2 0 0 0-2-2h-1a2 2 0 0 0-2 2v10"/><rect width="13" height="8" x="8" y="6" rx="1"/><circle cx="18" cy="20" r="2"/><circle cx="9" cy="20" r="2"/></svg>
+</body>
+
+</html>

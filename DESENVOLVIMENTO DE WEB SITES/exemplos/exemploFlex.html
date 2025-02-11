@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .flex-container {
+            background-color: #ecf0f1;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .flex-item {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        #basic-flex {
+            display: flex;
+        }
+
+        #flex-direction {       
+            display: flex;
+            flex-direction: column;
+        }
+
+        #Justify-content {
+            display: flex;
+            justify-content: center
+        }
+
+        #align-itens{
+            display: flex;
+            height: 100px;
+            align-items: center;
+        }
+
+        #flex-wrap {
+            display: flex;
+            height: 300px;
+            flex-wrap: wrap;
+            /* se usa junto com o flex-wrap */
+            align-content: center;
+
+        }
+
+        #flex-grow {
+            display: flex;
+        }
+
+        #flex-grow .flex-item:nth-child(2){
+            flex-grow: 2;
+           
+
+        }
+
+        #align-self {
+            display: flex;
+            height: 100px;
+
+        }
+
+        #align-self .flex-item:nth-child(1) {
+            align-self: center;
+
+        }
+
+        #gap {
+            display: flex;
+            gap: 12px;
+        }
+
+        #gap .flex-item {
+            margin: unset;
+
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Flex exemplo</h1>
+
+    <h2>1. Flex Básico</h2>
+    <div id="basic-flex" class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <span class="flex-item"> Item 3</span>
+        <span class="flex-item"> Item 4</span>
+        <div class="flex-item">Item 5</div>
+    </div>
+
+    <h2>2. Flex Direction</h2>
+    <div id="flex-direction" class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <span class="flex-item"> Item 3</span>
+        <span class="flex-item"> Item 4</span>
+        <div class="flex-item">Item 5</div>
+    </div>
+
+    <h2>3. Justify-content</h2>
+    <div id="Justify-content" class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <span class="flex-item"> Item 3</span>
+        <span class="flex-item"> Item 4</span>
+        <div class="flex-item">Item 5</div>
+    </div>
+
+    <h2>4. Align Itens</h2>
+    <div id="align-itens" class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <span class="flex-item"> Item 3</span>
+        <span class="flex-item"> Item 4</span>
+        <div class="flex-item">Item 5</div>
+    </div>
+
+    <h2>5. Flex wrap</h2>
+    <div id="flex-wrap" class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <span class="flex-item"> Item 3</span>
+        <span class="flex-item"> Item 4</span>
+        <div class="flex-item">Item 5</div>
+        <div class="flex-item">Item 6</div>
+        <div class="flex-item">Item 7</div>
+        <div class="flex-item">Item 8</div>
+        <div class="flex-item">Item 9</div>
+        <div class="flex-item">Item 10</div> 
+        <div class="flex-item">Item 11</div> 
+        <div class="flex-item">Item 12</div> 
+        <div class="flex-item">Item 13</div> 
+        
+    </div>
+
+    <h2>6. Flex Grow</h2>
+    <div id="flex-grow" class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <span class="flex-item"> Item 3</span>
+        <span class="flex-item"> Item 4</span>
+        <div class="flex-item">Item 5</div>
+    </div>
+
+    <h2>7. Align Self</h2>
+    <div id="align-self" class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <span class="flex-item"> Item 3</span>
+        <span class="flex-item"> Item 4</span>
+        <div class="flex-item">Item 5</div>
+    </div>
+
+    <h2>8. Gap</h2>
+    <div id="gap" class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <span class="flex-item"> Item 3</span>
+        <span class="flex-item"> Item 4</span>
+        <div class="flex-item">Item 5</div>
+    </div>
+</body>
+</html>

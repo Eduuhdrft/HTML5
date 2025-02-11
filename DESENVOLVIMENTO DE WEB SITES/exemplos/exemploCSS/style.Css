@@ -1,0 +1,34 @@
+#segndoh2{
+    color: aqua;
+    background-color: blueviolet;
+}
+.h2verde {
+    color: brown;
+    background-color: aquamarine;
+}
+p{
+    background-color: beige;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    margin-top:50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    /* mesma coisa que o código acima */
+
+    margin: 50px;
+
+    margin: 20px 10px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    padding: 40px;
+
+    padding: 40px 20px;
+
+    padding: 40px 20px 0px 20px;
+}

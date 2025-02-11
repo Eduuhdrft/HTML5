@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+
+        }
+
+        .example {
+            border:1px solid #ddd;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            padding: 15px;
+        
+        }
+
+        button {
+            background-color:  brown;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            padding: 10px 15px;
+            
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Básico: DOM</h1>
+    <h2>1. Selecionar e modificar elementos</h2>
+    <div class="example">
+        <p id="paragrafoModificavel">Este é um parágrafo que será modificado</p>
+        <button onclick="modificartexto()">Modificar texto</button>
+    </div>
+
+    <h2>2. Alterando Estilos</h2>
+    <div class="example">
+        <p id="paragrafoEstilizavel">Este é um parágrafo que terá seu estilo modificado</p>
+        <button onclick="modificaEstilo()">Alterar Estilo</button>
+    </div>
+
+    <h2>3. Adicionando e removendo elementos</h2>
+    <div class="example">
+        <dv id="containerLista">
+            <ul id="minhalista">
+                <li>Leite</li>
+                <li>Feijão</li>
+            </ul>
+        </dv>
+        <button onclick="adicionarItem()">Adicionar Item</button>
+        <button onclick="removerItem()">Remover Ultimo Item</button>
+    </div>
+
+    <h2>4. Usando o innerHTML</h2>
+    <div class="example">
+        <button onclick="conteudoDinamico()">Adicionando contéudo dinâmico</button>
+        <div id="conteudoDinamico"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

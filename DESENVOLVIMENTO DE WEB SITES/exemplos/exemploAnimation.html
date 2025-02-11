@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .animation-container {
+            border: 2px solid lightblue;
+            height: 150px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .example-box {
+            width: 100px;
+            height: 100px;
+            background-color: lavender;
+            margin: 20px 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-weight: 600;
+        }
+
+        #example1 {
+            /* animation-name: moveRight;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite; */
+            animation: moveRight 3s ease-in-out infinite;
+        }
+
+        #example1:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes moveRight {
+            0% {
+                transform: translatex(0);
+            }
+
+            50% {
+                transform: translatex(300px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        #example2 {
+            animation: changecolor 4s linear infinite;
+
+        }
+
+        @keyframes changecolor {
+
+            0% {
+                background-color: mediumaquamarine;
+            }
+
+            25% {
+                background-color: wheat;
+            }
+
+            50% {
+                background-color: hotpink;
+
+            }
+
+            75% {
+                background-color: cornflowerblue;
+
+            }
+
+            100% {
+                background-color: mediumaquamarine;
+
+            }
+
+        }
+
+        #example3 {
+            animation: pulsar 2s linear infinite;
+
+        }
+
+        @keyframes pulsar {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+        }
+
+        #example4 {
+            position: absolute;
+            animation: moverGirar 5s linear infinite;
+            border-radius: 50%;
+
+        }
+
+        @keyframes moverGirar {
+            0% {
+                left: 0;
+                transform: rotate(0deg);
+            }
+
+            25% {
+                left: 25%;
+                transform: rotate(90deg);
+            }
+
+            50% {
+                left: 50%;
+                transform: rotate(180deg);
+            }
+
+            75% {
+                left: 75%;
+                transform: rotate(270deg);
+            }
+
+            100% {
+                left: 100%;
+                transform: rotate(360deg);
+            }
+
+        }
+
+        #example5 {
+            position: absolute;
+            left: 0;
+            animation: moveRightForwards 3s linear forwards;
+
+        }
+
+        @keyframes moveRightForwards {
+
+            /* to = 100% */
+            to {
+                left: calc(100% - 100px);
+            }
+        }
+
+        #example6 {
+            left: 0;
+            position: absolute;
+            animation: moveBackwards 2s linear 2s backwards;
+        }
+
+        @keyframes moveBackwards {
+            /* from é =0% */
+            from {
+                left: calc(100% - 100px)  ;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Animation</h1>
+    <h2>Exemplos Básicos</h2>
+    <h3>1. Movimento Simples</h3>
+    <div class="animation-container">
+        <div class="example-box" id="example1">Mover</div>
+    </div>
+
+    <h3>Mudança de cor</h3>
+    <div class="animation-container">
+        <div class="example-box" id="example2">Cor</div>
+    </div>
+
+    <h3>3. Pulsar</h3>
+    <div class="animation-container">
+        <div id="example3" class="example-box">Pulsar</div>
+    </div>
+
+    <h3>4. Movimento e Rotação</h3>
+    <div class="animation-container">
+        <div class="example-box" id="example4">Girar</div>
+    </div>
+
+    <h3>5. Forwards</h3>
+    <div class="animation-container">
+        <div class="example-box" id="example5"></div>
+    </div>
+
+    <h3>6. Backwards</h3>
+    <div class="animation-container">
+        <div class="example-box" id="example6"></div>
+    </div>
+</body>
+
+</html>
